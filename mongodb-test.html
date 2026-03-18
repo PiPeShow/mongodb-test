@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .option {
+            padding: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .correct {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+        .explanation {
+            font-style: italic;
+            margin-top: 10px;
+            color: #555;
+        }
+        .comparison-table {
+            margin: 20px 0;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>MongoDB Test</h1>
+    <div class="question">
+        <h2>1. What is MongoDB?</h2>
+        <div class="options">
+            <div class="option">A) A relational database</div>
+            <div class="option correct">B) A NoSQL database</div>
+            <div class="option">C) A type of SQL</div>
+            <div class="option">D) None of the above</div>
+        </div>
+        <p class="explanation">MongoDB is a NoSQL database that uses a document-oriented data model. It is designed to handle large volumes of unstructured data efficiently.</p>
+    </div> 
+    <div class="question">
+        <h2>2. Which of the following is a feature of MongoDB?</h2>
+        <div class="options">
+            <div class="option">A) Strongly typed schemas</div>
+            <div class="option correct">B) Flexible schema</div>
+            <div class="option">C) Fixed data types</div>
+            <div class="option">D) None of the above</div>
+        </div>
+        <p class="explanation">MongoDB allows for a flexible schema, meaning fields can vary from document to document and data types can change.</p>
+    </div>  
+    <div class="question">
+        <h2>3. What is the format of data storage in MongoDB?</h2>
+        <div class="options">
+            <div class="option">A) JSON-like format</div>
+            <div class="option correct">B) BSON format</div>
+            <div class="option">C) XML format</div>
+            <div class="option">D) CSV format</div>
+        </div>
+        <p class="explanation">MongoDB stores data in BSON (Binary JSON) format, making it easy to map to objects in programming languages.</p>
+    </div>  
+    <div class="question">
+        <h2>4. Which of the following is true regarding MongoDB collections?</h2>
+        <div class="options">
+            <div class="option">A) Collections can only store data of the same type</div>
+            <div class="option correct">B) Collections can store documents of different shapes</div>
+            <div class="option">C) Collections are like tables in SQL</div>
+            <div class="option">D) None of the above</div>
+        </div>
+        <p class="explanation">In MongoDB, a collection can contain documents of varying structures, allowing flexibility in data storage.</p>
+    </div> 
+    <div class="question">
+        <h2>5. What command is used to insert a document in MongoDB?</h2>
+        <div class="options">
+            <div class="option">A) addDocument()</div>
+            <div class="option correct">B) insertOne()</div>
+            <div class="option">C) createDocument()</div>
+            <div class="option">D) None of the above</div>
+        </div>
+        <p class="explanation">The method insertOne() is used to insert a single document into a collection in MongoDB.</p>
+    </div>  
+    <h2>Comparison between Relational and NoSQL Databases</h2>
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Relational Databases</th>
+                <th>NoSQL Databases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Schema</td>
+                <td>Fixed Schema</td>
+                <td>Flexible Schema</td>
+            </tr>
+            <tr>
+                <td>Data Type</td>
+                <td>Structured Data</td>
+                <td>Unstructured/Structured Data</td>
+            </tr>
+            <tr>
+                <td>Scaling</td>
+                <td>Vertical Scaling</td>
+                <td>Horizontal Scaling</td>
+            </tr>
+            <tr>
+                <td>Transactions</td>
+                <td>ACID Compliance</td>
+                <td>Eventual Consistency</td>
+            </tr>
+            <tr>
+                <td>Query Language</td>
+                <td>SQL</td>
+                <td>No standardized query language</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
